@@ -24,6 +24,9 @@ def home():
         elif action == "remove_spaces":
             result = text.replace(" ", "")
 
+        elif action == "remove_extra_spaces":
+            result = " ".join(text.split())    
+
     return render_template("index.html", result=result)
 
 
